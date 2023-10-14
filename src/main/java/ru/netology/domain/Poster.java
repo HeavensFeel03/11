@@ -14,6 +14,7 @@ public class Poster {
         this.imageURL = imageURL;
         this.yearRelease = yearRelease;
     }
+    /*
 
     public int getPosterId() {
         return posterId;
@@ -54,4 +55,6 @@ public class Poster {
     public void setYearRelease(int yearRelease) {
         this.yearRelease = yearRelease;
     }
+
+     */
 }
