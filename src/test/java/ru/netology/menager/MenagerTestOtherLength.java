@@ -46,5 +46,29 @@ public class MenagerTestOtherLength {
         Assertions.assertArrayEquals(expected, actual);
     }
 
+    @Test
+    public void shouldReversePoster5other3() {
+        MenagerPosters mena = new MenagerPosters(5);
+        mena.add(item1);
+        mena.add(item2);
+        mena.add(item3);
+        Poster[] expected = {item3, item2, item1};
+        Poster[] actual = mena.findLast();
+
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void shouldReversePoster3other3() {
+        MenagerPosters mena = new MenagerPosters(3);
+        mena.add(item1);
+        mena.add(item2);
+        mena.add(item3);
+        Poster[] expected = {item3, item2, item1};
+        Poster[] actual = mena.findLast();
+
+        Assertions.assertArrayEquals(expected, actual);
+    }
+
 
 }

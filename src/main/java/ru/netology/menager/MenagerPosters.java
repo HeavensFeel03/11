@@ -39,6 +39,9 @@ public class MenagerPosters {
 
     public Poster[] findLast() {
         Poster[] reversed = getReversePosters();
+        if (reversed.length <= resultLength) {
+            resultLength = reversed.length;
+        }
         Poster[] temp = new Poster[resultLength];
         for (int i = 0; i < resultLength; i++) {
             temp[i] = reversed[i];
