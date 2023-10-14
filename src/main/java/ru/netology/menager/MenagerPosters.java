@@ -24,12 +24,12 @@ public class MenagerPosters {
         afisha = temp;
     }
 
-    public Poster[] getPosters() {
+    public Poster[] findAll() {
         return afisha;
     }
 
     public Poster[] getReversePosters() {
-        Poster[] all = getPosters();
+        Poster[] all = findAll();
         Poster[] reversed = new Poster[all.length];
         for (int i = 0; i < reversed.length; i++) {
             reversed[i] = all[all.length - 1 - i];
@@ -37,7 +37,7 @@ public class MenagerPosters {
         return reversed;
     }
 
-    public Poster[] getReversePoster5() {
+    public Poster[] findLast() {
         Poster[] reversed = getReversePosters();
         Poster[] temp = new Poster[resultLength];
         for (int i = 0; i < resultLength; i++) {

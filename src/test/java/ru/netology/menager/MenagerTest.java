@@ -29,7 +29,7 @@ public class MenagerTest {
     @Test
     public void shouldAllPoster() {
         Poster[] expected = {item1, item2, item3, item4, item5, item6, item7};
-        Poster[] actual = mena.getPosters();
+        Poster[] actual = mena.findAll();
 
         Assertions.assertArrayEquals(expected, actual);
     }
@@ -45,7 +45,7 @@ public class MenagerTest {
     @Test
     public void shouldReversePoster5() {
         Poster[] expected = {item7, item6, item5, item4, item3};
-        Poster[] actual = mena.getReversePoster5();
+        Poster[] actual = mena.findLast();
 
         Assertions.assertArrayEquals(expected, actual);
     }

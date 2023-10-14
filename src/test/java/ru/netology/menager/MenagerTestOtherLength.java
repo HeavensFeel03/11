@@ -25,7 +25,7 @@ public class MenagerTestOtherLength {
         mena.add(item6);
         mena.add(item7);
         Poster[] expected = {item7, item6, item5};
-        Poster[] actual = mena.getReversePoster5();
+        Poster[] actual = mena.findLast();
 
         Assertions.assertArrayEquals(expected, actual);
     }
@@ -41,7 +41,7 @@ public class MenagerTestOtherLength {
         mena.add(item6);
         mena.add(item7);
         Poster[] expected = {item7, item6, item5, item4, item3, item2, item1};
-        Poster[] actual = mena.getReversePoster5();
+        Poster[] actual = mena.findLast();
 
         Assertions.assertArrayEquals(expected, actual);
     }
